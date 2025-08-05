@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Selamat datang</div>
+      <!-- Hamburger button -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang kami</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="pendaftarankom.html" class="active">JOIN</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- navbar -->
+
+<!-- content -->
+ <div class="content">
+  <div class="picture">
+    <img src="gambar.png" alt="gambar" height="35%" width="35%">
+    <div class="text-content">
+      <p>Komunitas belajar #Bersama</p>
+      <h2>"Mulai dari sini, ubah dunia bersama kami!"</h2>
+      <p>Gabung yuk! Tempat nongkrong orang-orang sefrekuensi yang suka berbagi cerita, ide, dan semangat positif bareng.</p>
+      <a href="pendaftarankom.html" class="submit">JOIN SEKARANG</a>
+    </div>
+  </div>
+</div>
+
+<!-- content -->
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('active');
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

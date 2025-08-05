@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Anggota Komunitas Informatika</title>
+  <link href="https://fonts.goog  leapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylekom.css">
+</head>
+<body>
+  <div class="header">
+    <header>
+      <h1 class="h1">Pendaftaran Anggota Komunitas Informatika</h1>
+    </header>
+  </div>
+
+  <main>
+    <div class="body">
+      <div class="h2">
+        <section id="pendaftaran">
+          <h2>Formulir Pendaftaran</h2>
+      </div>
+      <div class="container">
+        <div class="form">
+          <div class="form-container">
+            <form action="proses.php" method="post">
+              <div class="row">
+                <div class="col-25">
+                  <label for="nama">Nama:</label>
+                </div>
+                <div class="col-75">
+                  <input id="nama" placeholder="Nama Anda..." type="text" name="nama" autocomplete="off" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">Email:</label>
+                </div>
+                <div class="col-75">
+                  <input id="email" placeholder="Email Anda..." type="email" name="email" autocomplete="off" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="no_telp">No. Telp:</label>
+                </div>
+                <div class="col-75">
+                  <input id="no_telp" placeholder="No. Telp Anda..." type="tel" name="no_telp" autocomplete="off" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="kelas">Kelas:</label>
+                </div>
+                <div class="col-75">
+                  <select id="kelas" name="kelas" required>
+                    <option value="" disabled selected>Pilih Kelas</option>
+                    <option value="12">12</option>
+                    <option value="11">11</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="latar_belakang">Latar Belakang:</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="latar_belakang" placeholder="Tulis Sesuatu..." name="latar_belakang" rows="8" cols="80" required></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <button class="daftar" type="submit" name="submit">Daftar</button>
+              </div>
+              <div class="back">
+                <a href="index.html">kembali</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      </div>
+    </div>
+  </main>
+
+  <div class="footer">
+    <footer>
+      <p>&copy; 2025. Hak cipta dilindungi.</p>
+    </footer>
+  </div>
+</body>
+</html>
